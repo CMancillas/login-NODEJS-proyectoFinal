@@ -12,7 +12,7 @@ include 'conexion_be.php';
 
   if(mysqli_num_rows($validar_login) > 0){
     $_SESSION['usuario'] = $correo;
-    header("location: ../chart_basico/index.html");
+    header("location: ../articulos_db.php");
     exit;
   }else {
     echo'
